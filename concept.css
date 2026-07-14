@@ -1,18 +1,25 @@
-/* The board itself */
 #board {
     display: grid;
     grid-template-columns: repeat(8, 60px);
     grid-template-rows: repeat(8, 60px);
     gap: 5px;
-    margin: 0px;
+    margin: 50px 100px;
     width: fit-content;
+}
+
+#trash {
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    left: 650px;
+    background-color: red;
+    position: absolute;
 }
 
 .square {
     width: 60px;
     height: 60px;
     background-color: #f0f0f0;
-    border: 1px solid #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
